@@ -58,7 +58,7 @@ nav ul {
 }
 @media(max-width: 550px){
     nav{
-        height: 5vh;
+        height: 10vh;
     }
     nav ul{
         width: 100%;
@@ -88,7 +88,7 @@ nav ul li:hover {
 }
 @media(max-width: 550px){
     .container{
-        top:5vh;
+        top:10vh;
     }
 }
 #portada {
@@ -130,18 +130,24 @@ nav ul li:hover {
 }
 @media(max-width:550px){
     #equipo{
-        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 1rem;
     }
 }
 #equipo article {
+    width: 100%;
   max-width: 450px;
   margin: 0 auto;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
   text-align: center;
   font-style: italic;
   font-weight: 100;
   color: var(--color--general2)
 }
+
 
 /* Section - Servicios*/
 #servicios {
