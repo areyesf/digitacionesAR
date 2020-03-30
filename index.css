@@ -50,15 +50,25 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 50%;
+  height: 100%;
   margin-right: 30px;
 }
 nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   padding: 0 20px;
+  height: 100%;
 }
 nav ul li a {
   color: var(--color--general);
 }
+nav ul li:hover {
+    background:var(--color--general2)
+}
+
 
 /*container's elements*/
 .container {
@@ -163,6 +173,9 @@ nav ul li a {
 }
 #contactos ul li a{
     color: var(--color--general2);
+}
+#contactos ul li a:hover{
+    color: #000;
 }
 #contactos ul li i {
   margin-right: 5px;
