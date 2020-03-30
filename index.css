@@ -13,10 +13,11 @@
   box-sizing: border-box;
 }
 /*colors palette*/
-:root{
-    --color--general: #fff;
-    --color--navBackground: #29292C;
-    --color--equipoBackground: #C4C4C4;
+:root {
+  --color--general: #fff;
+  --color--navBackground: #29292c;
+  --color--equipoBackground: #c4c4c4;
+  --color--sectionBackground: rgba(196, 196, 196, 0.3);
 }
 
 /*general styles*/
@@ -24,97 +25,129 @@ body {
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 /*navagation*/
-nav{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 10vh;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 1;
-    background-color: var(--color--navBackground);
-    color: var(--color--navFont);
-    font-size: 1rem;
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  background-color: var(--color--navBackground);
+  color: var(--color--navFont);
+  font-size: 1rem;
 }
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    margin-right: 30px;
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  margin-right: 30px;
 }
-nav ul li{
-    padding: 0 20px;
+nav ul li {
+  padding: 0 20px;
 }
-nav ul li a{
-    color: var(--color--general);
+nav ul li a {
+  color: var(--color--general);
 }
 
 /*container's elements*/
-.container{
-    position: relative;
-    top: 10vh;
-    
+.container {
+  position: relative;
+  top: 10vh;
 }
-#portada{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 70vh;
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(255, 255, 255, 0.5)), url(https://i.ibb.co/C1vFq11/portada.jpg);
-    background-size: cover;
-    background-position: center;
+#portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(https://i.ibb.co/C1vFq11/portada.jpg);
+  background-size: cover;
+  background-position: center;
 }
-#portada h1{
-    color: var(--color--general);
-    font-size: 4rem;
+#portada h1 {
+  color: var(--color--general);
+  font-size: 4rem;
 }
-#portada p{
-    margin-top:1rem;
-    opacity: 50%;
-    font-size: 1.2rem;
+#portada p {
+  margin-top: 1rem;
+  opacity: 50%;
+  font-size: 1.2rem;
 }
 /*Section - Equipo*/
-#equipo{
-    position: relative;
-    height: 20vh;
-    background: rgba(196, 196, 196, 0.3);
+#equipo {
+  position: relative;
+  height: 20vh;
+  background: var(--color--sectionBackground);
 }
-#equipo article{
-    max-width: 450px;
-    margin: 0 auto;
-    padding-top: 1.5rem;
-    text-align: center;
-    font-style: italic;
+#equipo article {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-style: italic;
 }
 /* Section - Servicios*/
-#servicios{
-    padding-top: 1.5rem;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
+#servicios {
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
-.services-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 4rem;
-    max-width: 1200px;
-    margin: 2rem auto 4rem auto;
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 4rem;
+  max-width: 1200px;
+  margin: 2rem auto 4rem auto;
 }
-
+/*Section - Contactos*/
+#contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--color--sectionBackground);
+  height: 100px;
+  color: rgba(0,0,0,0.5);
+}
+#contactos ul {
+  display: flex;
+  text-align: center;
+}
+#contactos ul li {
+  padding: 0 10px;
+  font-size: 1rem;
+}
+#contactos ul li a{
+    color: rgba(0,0,0,0.5);
+  }
+#contactos ul li i {
+  margin-right: 5px;
+}
 /*footer's elements*/
-#footer{
-    position: relative;
+#footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color--navBackground);
+    color: var(--color--general);
+    font-size: 0.7rem;
 }
