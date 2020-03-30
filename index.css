@@ -15,7 +15,7 @@
 /*colors palette*/
 :root {
   --color--general: #fff;
-  --color--general2: rgba(0, 0, 0, 0.8);
+  --color--general2: rgba(0, 0, 0, 0.5);
   --color--navBackground: #29292c;
   --color--equipoBackground: #c4c4c4;
   --color--sectionBackground: rgba(196, 196, 196, 0.3);
@@ -128,15 +128,15 @@ nav ul li:hover {
 }
 /*Section - Equipo*/
 #equipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 20vh;
   background: var(--color--sectionBackground);
 }
 @media (max-width: 550px) {
   #equipo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     padding: 1rem;
   }
@@ -151,7 +151,11 @@ nav ul li:hover {
   font-weight: 100;
   color: var(--color--general2);
 }
-
+@media (max-width: 550px) {
+    #equipo article p{
+        color: #000;
+      }
+  }
 /* Section - Servicios*/
 #servicios {
   padding: 1.5rem;
